@@ -46,7 +46,7 @@
     }
 }
 
-@keyframe jump {
+@keyframes jump {
     0% {
         bottom: 0;
     }
@@ -65,5 +65,15 @@
 
     100% {
         bottom: 0;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
     }
 }
