@@ -20,3 +20,13 @@
     width: 80px;
     animation: pipe-animation 1.5s infinite linear;
 }
+
+.mayara {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
