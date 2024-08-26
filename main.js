@@ -1,8 +1,9 @@
-const mario = document.querySelector(".mario");
+const mayara = document.querySelector(".mayara");
 const pipe = document.querySelector(".pipe");
 
 const jump = () => {
-    mario.classList.add("jump");
+    mayara.classList.add("jump");
 }
 document.addEventListener("keydown", jump);
+
 
