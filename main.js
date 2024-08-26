@@ -10,7 +10,7 @@ const jump = () => {
     ,500);
 }
 
-
+const loop = setInterval (() => ());
 
 
 
