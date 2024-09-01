@@ -1,4 +1,4 @@
-const mayara = document.querySelector(".mayara");
+const mayara = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 
 const jump = () => {
@@ -12,18 +12,18 @@ const jump = () => {
 
 const loop = setInterval (() => {
     const pipePosition = pipe.offsetLeft;
-    const mayaraPosition = +window.getComputedStyle(mayara).bottom.replace("px", "");
+    const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
 
-    if (pipePosition <= 120 && pipePosition > 0 && mayaraPosition < 80) {
+    if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
         pipe.style.animation = "none";
         pipe.style.left = `${pipePosition}px`;
 
-        mayara.style.animation = "none";
-        mayara.style.left = `${mayaraPosition}px`;
+        mario.style.animation = "none";
+        mario.style.left = `${marioPosition}px`;
 
-        mayara.src = "./img/game-over.png";
-        mayara.style.width = "75px";
-        mayara.style.marginLeft = "50px";
+        mario.src = "./img/game-over.png";
+        mario.style.width = "75px";
+        mario.style.marginLeft = "50px";
 
         clearInterval(loop);
     }
