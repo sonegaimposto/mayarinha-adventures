@@ -12,7 +12,7 @@ const jump = () => {
 
 const loop = setInterval (() => {
     const pipePosition = pipe.offsetLeft;
-    const marioPosition = +window.getComputedStyle(mayara).bottom.replace("px", "");
+    const mayaraPosition = +window.getComputedStyle(mayara).bottom.replace("px", "");
 
     if (pipePosition <= 120 && pipePosition > 0 && mayaraPosition < 80) {
         pipe.style.animation = "none";
