@@ -18,12 +18,14 @@ const startGame = () => {
 }
 
 const jump = () => {
-    mario.classList.add("jump");
+    if (gameStarted) {
+        mario.classList.add("jump");
 
-    setTimeout(() => {
-        mario.classList.remove("jump");
+        setTimeout(() => {
+            mario.classList.remove("jump");
+        }
+        ,500);
     }
-    ,500);
 }
 
 const loop = setInterval (() => {
