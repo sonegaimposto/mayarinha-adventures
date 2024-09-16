@@ -10,6 +10,7 @@ let gameStarted = false;
 
 const startGame = () => {
     gameStarted = true;
+    audioStart.play();
 
     pipe.style.animation = "pipe-animation 1.5s infinite linear";
     startButton.style.display = "none";
@@ -43,6 +44,9 @@ const loop = setInterval (() => {
         mario.src = "img/game-over.png";
         mario.style.width = "75px";
         mario.style.marginLeft = "50px";
+        audioStart.pause();
+
+        gameOverSound.play();
 
         clearInterval(loop);
     }
