@@ -1,9 +1,10 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
+const clouds = document.querySelector(".nuvem")
 const startButton = document.querySelector(".start");
 const gameOverScreen = document.querySelector(".gameover");
 
-audioStart = new Audio("sound/audio_theme.mp3");
+const audioStart = new Audio("sound/audio_theme.mp3");
 const gameOverSound = new Audio("sound/audio_gameover.mp3");
 let gameStarted = false;
 
