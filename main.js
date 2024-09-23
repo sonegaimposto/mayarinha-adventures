@@ -3,7 +3,7 @@ const pipe = document.querySelector(".pipe");
 const clouds = document.querySelector(".nuvem")
 const startButton = document.querySelector(".start");
 const gameOverScreen = document.querySelector(".game-over");
-const scoreElement = document.getElementById("scorevalue")
+const scoreElement = document.getElementById("score-value")
 
 const audioStart = new Audio("sound/audio_theme.mp3");
 const gameOverSound = new Audio("sound/audio_gameover.mp3");
