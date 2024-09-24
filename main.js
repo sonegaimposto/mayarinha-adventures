@@ -54,7 +54,6 @@ const loop = setInterval (() => {
         mario.style.animation = "none";
         mario.style.left = `${marioPosition}px`;
 
-        mario.src = "img/catcrying.gif";
         mario.style.width = "75px";
         mario.style.marginLeft = "50px";
         audioStart.pause();
@@ -62,6 +61,9 @@ const loop = setInterval (() => {
         gameOverSound.play();
 
         gameOverScreen.style.display = "flex";
+        const gameOverImage = setInterval(() => {
+            mario.src = "img/catcrying.gif";
+        }, 250);
         clearInterval(loop);
     } else if (pipePosition < 0 && gameStarted) {
         updateScore();
