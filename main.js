@@ -26,9 +26,11 @@ const startGame = () => {
 const jump = () => {
     if (gameStarted) {
         mario.classList.add("jump");
+        mario.src = "img/jump.gif";
 
         setTimeout(() => {
             mario.classList.remove("jump");
+            mario.src = "img/cat.gif";
         }
         ,500);
     }
